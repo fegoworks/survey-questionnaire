@@ -1,0 +1,11 @@
+.arrowNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}

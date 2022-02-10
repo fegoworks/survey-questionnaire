@@ -1,0 +1,9 @@
+.progressBar {
+    width: 100%;
+    background-color: white;
+}
+
+.progress {
+    padding: 0.25rem;
+    background-color: grey;
+}

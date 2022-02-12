@@ -46,3 +46,11 @@ export type MapJump = {
   destination: string;
   value: string;
 };
+
+export enum ActionTypes {
+  PREV_QUESTION = "PREV_QUESTION",
+  SET_NEXT_QUESTION = "SET_NEXT_QUESTION",
+  TOGGLE_SELECTED = "TOGGLE_SELECTED",
+  LOAD_QUESTIONNAIRE = "LOAD_QUESTIONNAIRE",
+  ANSWER_QUESTION = "ANSWER_QUESTION",
+}

@@ -1,5 +1,5 @@
 import { Choice } from "../../../types/types";
-import Response from "../Response";
+import Response from "../../molecules/Response";
 import styles from "./responseList.module.css";
 
 interface IResponseList {

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Questionnaire } from "../../../types/types";
 import data from "../../../questionnaire.json";
-import QuestionnaireCardList from "../../molecules/QuestionnaireCardList";
+import QuestionnaireCardList from "../../complexes/QuestionnaireCardList";
 import Header from "../../complexes/Header";
 import styles from "./home.module.css";
 

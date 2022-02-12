@@ -2,7 +2,7 @@ import styles from "./content.module.css";
 import { Question } from "../../../types/types";
 import { useContext, useEffect, useState } from "react";
 import { QuestionContext } from "../../../providers/context";
-import ResponseList from "../../molecules/ResponseList";
+import ResponseList from "../ResponseList";
 import QuestionText from "../../molecules/Question";
 import Button from "../../atoms/Button";
 import useCounter from "../../../hooks/useCounter";

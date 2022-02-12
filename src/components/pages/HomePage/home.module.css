@@ -1,0 +1,10 @@
+.home {
+  height: 100vh;
+  color: black;
+  padding: 0 2rem;
+}
+
+.home h3 {
+    margin: 2rem 0;
+    font-weight: 400;
+}

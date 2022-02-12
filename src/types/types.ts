@@ -1,3 +1,12 @@
+export type Questionnaire = {
+  id: number;
+  name: string;
+  identifier: string;
+  questions: Question[];
+  description: string;
+  category_name_hyphenated: string;
+};
+
 export type Choice = {
   label: string;
   value: string;
@@ -16,6 +25,7 @@ export type Question = {
   multiline?: string;
   reference?: string;
   checked?: boolean;
+  answer?: string;
 };
 
 export type Condition = {

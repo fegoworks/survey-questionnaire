@@ -1,3 +1,5 @@
+import useProgress from "../../../hooks/useProgress";
+import ProgressBar from "../../atoms/ProgressBar";
 import ArrowNavigation from "../../molecules/ArrowNavigation";
 import styles from "./footer.module.css";
 
@@ -8,8 +10,10 @@ interface IFooter {
 }
 
 const Footer: React.FC<IFooter> = ({ moveDown, moveUp, checked }) => {
+  const { progress } = useProgress();
   return (
     <div className={styles.footer}>
+      <ProgressBar width={progress} />
       <ArrowNavigation moveDown={moveDown} moveUp={moveUp} checked={checked} />
     </div>
   );

@@ -1,5 +1,5 @@
 import { Choice } from "../../../types/types";
-import Response from "../../atoms/Response";
+import Response from "../Response";
 import styles from "./responseList.module.css";
 
 interface IResponseList {
@@ -17,7 +17,7 @@ const ResponseList: React.FC<IResponseList> = ({
     <ul className={styles.responseList}>
       {responseList?.map((response: Choice, index: number) => (
         <Response
-          key={index}
+          key={`${index} + qc`}
           value={response.value}
           label={response.label}
           selected={response.selected}

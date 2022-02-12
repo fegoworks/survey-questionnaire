@@ -1,12 +1,36 @@
-import data from "../../questionnaire.json";
-
-const {
-  questionnaire: { questions },
-} = data;
-
 const initialState = {
-  questions,
-  currentQuestion: questions[0],
+  questions: [],
+  currentQuestion: {
+    question_type: "",
+    identifier: "",
+    headline: "",
+    description: "",
+    required: false,
+    multiple: "false",
+    jumps: [
+      {
+        conditions: [
+          {
+            field: "",
+            value: "",
+          },
+        ],
+        destination: {
+          id: "",
+        },
+      },
+    ],
+    choices: [
+      {
+        label: "",
+        value: "",
+        selected: false,
+      },
+    ],
+    multiline: "",
+    reference: "",
+    checked: false,
+  },
 };
 
 export default initialState;

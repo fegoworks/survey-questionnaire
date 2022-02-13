@@ -1,0 +1,38 @@
+.questionnaireIntro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 0 5rem;
+}
+
+.questionnaireIntro h2 {
+  margin: 0;
+  font-size: 5rem;
+}
+
+.questionnaireIntro p {
+  font-size: 1.5rem;
+  margin: 0 10rem;
+  text-align: center;
+}
+
+.questionnaireIntro button {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 414px) {
+  .questionnaireIntro {
+    padding: 0 1rem;
+  }
+  .questionnaireIntro h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .questionnaireIntro p {
+    font-size: 1rem;
+    margin: 0 2rem;
+  }
+}

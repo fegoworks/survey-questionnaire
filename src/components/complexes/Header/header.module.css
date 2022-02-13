@@ -1,0 +1,33 @@
+.header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  border-bottom: grey solid 1px;
+  padding: 0 2rem;
+  height: 4rem;
+}
+
+.menuBar {
+  text-decoration: none;
+}
+
+.line {
+  width: 2.5rem;
+  padding: 0.15rem;
+  margin: 0.45rem 0;
+  background-color: white;
+}
+
+.line.isGrey {
+  background-color: grey;
+}
+
+.line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.line:nth-child(2) {
+  transform: rotate(120deg);
+}

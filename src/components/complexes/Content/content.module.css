@@ -1,0 +1,49 @@
+.content {
+  position: relative;
+  margin: 10rem 4rem;
+  animation-name: moveQuestion;
+  animation-duration: 1s;
+}
+
+.content.animate {
+  position: relative;
+  animation-name: moveQuestion;
+  animation-duration: 1s;
+}
+
+.answerForm {
+  display: flex;
+  margin: 0 4rem;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.answerForm input {
+  font-size: 1.5rem;
+  width: 100%;
+  background: transparent;
+  color: grey;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.answerForm input:focus {
+  outline: none;
+}
+
+@keyframes moveQuestion {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    margin: 8rem 0.75rem;
+  }
+}

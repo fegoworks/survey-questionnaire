@@ -87,7 +87,7 @@ your@pc:~$ git clone https://github.com/fegoworks/survey-questionnaire.git
 Move to the downloaded folder
 
 ```Shell
-your@pc:~$ cd github-trending-clone
+your@pc:~$ cd survey-questionnaire
 ```
 
 Install all packages

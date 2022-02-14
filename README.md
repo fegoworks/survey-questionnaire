@@ -7,9 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [SURVEY QUESTIONNAIRE](#survey-questionnaire)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
-  - [Concepts and APIs Employed](#concepts-and-apis-employed)
+  - [Concepts employed](#concepts-employed)
   - [Built with](#built-with)
-  - [Style Guide](#style-guide)
+  - [System Design/ UI Architecture](#system-design-ui-architecture)
   - [Designs](#designs)
   - [Required Installations](#required-installations)
   - [Installation of This Repository](#installation-of-this-repository)
@@ -26,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <!-- concepts and apis employed -->
 
-## Concepts and APIs Employed
+## Concepts employed
 
 - The app is similar to what Typeform.com offers [here](https://www.typeform.com/#home-examples).
 - This app demonstrates the use of basic concepts of React 
@@ -45,8 +45,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Typescript
 - React
   
-<!-- STYLE GUIDE -->
-## Style Guide
+<!-- SYSTEM DESIGN -->
+## System Design/ UI Architecture
 
 UI Implementation is done using the [Atomic Design Pattern](http://atomicdesign.bradfrost.com/chapter-2/)
 
@@ -58,10 +58,13 @@ UI Implementation is done using the [Atomic Design Pattern](http://atomicdesign.
 See original survey page screenshots below;
 
 - Questionnaire Home Page.
+  <img width="1440" alt="Client Side" src="./screenshots/home.png">
 
 - Questionnaire Intro Page.
+  <img width="1440" alt="Client Side" src="./screenshots/intro.png">
 
 - Questionnaire/Quiz page.
+  <img width="1440" alt="Client Side" src="./screenshots/quiz.png">
 
 <!-- REQUIRED INSTALLATION -->
 

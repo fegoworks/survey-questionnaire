@@ -1,11 +1,11 @@
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
 interface IHeader {
-  text: string;
+  children: React.ReactNode;
   isGrey?: boolean;
 }
 
-const Header: React.FC<IHeader> = ({ text, isGrey }) => {
+const Header: React.FC<IHeader> = ({ children, isGrey }) => {
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.menuBar}>
@@ -13,7 +13,7 @@ const Header: React.FC<IHeader> = ({ text, isGrey }) => {
         <div className={`${styles.line} ${isGrey ? styles.isGrey : ""}`}></div>
         <div className={`${styles.line} ${isGrey ? styles.isGrey : ""}`}></div>
       </Link>
-      <div>{text}</div>
+      <div>{children}</div>
     </header>
   );
 };

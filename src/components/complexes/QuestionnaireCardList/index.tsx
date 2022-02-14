@@ -1,5 +1,5 @@
 import { Questionnaire } from "../../../types/types";
-import QuestionnaireCard from "../../molecules/QuestionnaireCard/inex";
+import QuestionnaireCard from "../../molecules/QuestionnaireCard";
 import { IQuestionnaire } from "../../pages/HomePage";
 import styles from "./questionnaire.module.css";
 

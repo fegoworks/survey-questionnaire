@@ -1,8 +1,6 @@
 # SURVEY QUESTIONNAIRE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-This is a clone of the Github Trending Page. Its a simple app to demostrate the basic features of the react: components, routes and API integration.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a simple app that allows a user answer questions provided by a questionnaire. The app uses the `questionnaire.json` file to derive its definition of a questionnaire
 
 ## Table of Contents
 
@@ -31,11 +29,10 @@ This is a clone of the Github Trending Page. Its a simple app to demostrate the 
 ## Concepts and APIs Employed
 
 - The app is similar to what Typeform.com offers [here](https://www.typeform.com/#home-examples).
-- 
 - This app demonstrates the use of basic concepts of React 
   - Components
   - Routing
-  - State management (React Hooks)
+  - State management (React Hooks/Context APIs)
   - Custom hooks
   - CSS Modules
 
@@ -50,12 +47,6 @@ This is a clone of the Github Trending Page. Its a simple app to demostrate the 
   
 <!-- STYLE GUIDE -->
 ## Style Guide
-
-I have implemented react-style guide which helped with developing my UI components as I feel these are essential on any project.
-
-You can launch this with `npm run styleguide`
-
-Navigate to `http://localhost:6060`
 
 UI Implementation is done using the [Atomic Design Pattern](http://atomicdesign.bradfrost.com/chapter-2/)
 

@@ -18,7 +18,9 @@ const Home: React.FC = () => {
   };
   return (
     <>
-      <Header text="Questionnaires" isGrey={true} />
+      <Header isGrey={true}>
+        
+      </Header>
       <div className={`${styles.home} ${styles.multiBg}`}>
         <h3>Survey & questionnaire templates & examples</h3>
         <QuestionnaireCardList

@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import useCounter from "../../../hooks/useCounter";
 import useQuestionnaire from "../../../hooks/useQuestionnaire";
 import { QuestionContext } from "../../../providers/context";
 import Content from "../../complexes/Content";
@@ -28,6 +29,7 @@ const Questionnaire: React.FC = () => {
   }, [questions]);
 
   const { currentQuestion } = state;
+  const { setPage, questionNumber } = useCounter(currentQuestion);
 
   const selectChoice = (event: React.MouseEvent<HTMLDivElement>) => {
     const textContent = event.currentTarget.id;
@@ -47,16 +49,19 @@ const Questionnaire: React.FC = () => {
         />
       ) : (
         <>
-          <Header text="Survey Questions" />
+          <Header>{name}</Header>
           <Content
             question={currentQuestion}
             handleClick={selectChoice}
             animate={animate}
+            questionNumber={questionNumber}
+            setPage={setPage}
           />
           <Footer
             moveDown={() => setPrevQuestion()}
             moveUp={() => setNextQuestion()}
             checked={currentQuestion?.checked}
+            setPage={setPage}
           />
         </>
       )}

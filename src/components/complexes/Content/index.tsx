@@ -1,6 +1,6 @@
 import styles from "./content.module.css";
 import { Question } from "../../../types/types";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { QuestionContext } from "../../../providers/context";
 import ResponseList from "../ResponseList";
 import QuestionText from "../../molecules/Question";
@@ -10,19 +10,27 @@ import useCounter from "../../../hooks/useCounter";
 interface IContent {
   animate: boolean;
   question: Question;
+  questionNumber: number;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
   handleClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-const Content: React.FC<IContent> = ({ animate, question, handleClick }) => {
-  const { answerQuestion } = useContext(QuestionContext);
-  const { questionNumber, setCounter } = useCounter(question);
+const Content: React.FC<IContent> = ({
+  animate,
+  question,
+  questionNumber,
+  setPage,
+  handleClick,
+}) => {
   const [value, setValue] = useState<string>();
+  const { answerQuestion, state } = useContext(QuestionContext);
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };
 
   const handleBtnClick = () => {
     answerQuestion(value);
+    setPage("Next");
   };
 
   return (

@@ -7,12 +7,9 @@ export default function useProgress(): { progress: number } {
   const { questions, currentQuestion } = state;
 
   useEffect(() => {
-    console.log("here");
     const totalQuestions: number = questions.length;
     const currentQ: number = state.questions.indexOf(currentQuestion) + 1;
     const progress: number = Math.ceil((currentQ / totalQuestions) * 100);
-
-    console.log({ totalQuestions, currentQ, progress });
     setProgress(progress);
   }, [currentQuestion]);
 

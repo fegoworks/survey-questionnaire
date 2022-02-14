@@ -9,9 +9,9 @@ interface IQuestion {
 
 const Question: React.FC<IQuestion> = ({ questionNumber, questionText }) => (
   <div className={styles.question}>
-    <span>
+    {/* <span>
       {questionNumber} <ArrowRight width="12" height="12" color="white" />
-    </span>
+    </span> */}
     <Text text={questionText} />
   </div>
 );

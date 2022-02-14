@@ -46,4 +46,8 @@
   .content {
     margin: 8rem 0.75rem;
   }
+
+  .answerForm {
+    margin: 0 1rem;
+  }
 }

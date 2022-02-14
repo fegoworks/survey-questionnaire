@@ -73,7 +73,6 @@ const reducer: React.Reducer<any, IQuestionAction> = (
         currentQuestion: newQs[index],
       };
     case ActionTypes.SET_NEXT_QUESTION:
-      console.log({ c: state.currentQuestion });
       if (index === state.questions.length - 1) {
         return { ...state, currentQuestion };
       }
@@ -99,12 +98,10 @@ const reducer: React.Reducer<any, IQuestionAction> = (
       };
 
     case ActionTypes.PREV_QUESTION:
-      console.log({c: state.currentQuestion})
       if (index === 0) {
         return { ...state, currentQuestion: state.currentQuestion };
       }
       if (state.currentQuestion.reference) {
-        console.log("yeah we do")
         newQuestion = state.questions.find(
           (q) => q.identifier === state.currentQuestion.reference
         );
